@@ -194,6 +194,97 @@
       </tags>
   </entry>
   <entry>
+    <title>图床工具PicGo的使用</title>
+    <url>/2021/05/18/picgo/</url>
+    <content><![CDATA[<h1 id="图床工具PicGo的使用"><a href="#图床工具PicGo的使用" class="headerlink" title="图床工具PicGo的使用"></a>图床工具PicGo的使用</h1><h2 id="1-picgo安装"><a href="#1-picgo安装" class="headerlink" title="1.picgo安装"></a>1.picgo安装</h2><ul>
+<li><p><a href="https://github.com/Molunerfinn/PicGo/releases">picgo官网下载</a></p>
+<p>dmg是Mac版本，exe是windows版本</p>
+</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143147.png" alt="image-20210518120525361"></p>
+<p>安装直接傻瓜式一键安装就行了</p>
+<h2 id="2-打开github创建token"><a href="#2-打开github创建token" class="headerlink" title="2.打开github创建token"></a>2.打开github创建token</h2><ul>
+<li>打开github找到之前创建的cdn</li>
+</ul>
+<p>没创建过的可以看我之前发的博客github+jsdelivr搭建免费cdn</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143156.png" alt="image-20210518121246319"></p>
+<ul>
+<li>点击右上角头像，点击Settings（设置）</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143206.png" alt="image-20210518122606592"></p>
+<ul>
+<li>选择左边的Developer settings（开发人员设定）</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143215.png" alt="image-20210518122758063"></p>
+<ul>
+<li>点击左边第三个Personal access tokens（个人访问令牌）</li>
+<li>点击中间右上角的Generate now token（生成新令牌）</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143221.png" alt="image-20210518122956574"></p>
+<ul>
+<li>Note填token名称</li>
+<li>repo全选</li>
+<li>其他的不用管</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143227.png" alt="image-20210518123511452"></p>
+<ul>
+<li>选完之后点击下面的绿色按钮</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143234.png" alt="image-20210518123846731"></p>
+<ul>
+<li>然后会生成一个token（token只显示一次，注意保存）</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143240.png" alt="image-20210518124109481"></p>
+<h2 id="3-配置picgo"><a href="#3-配置picgo" class="headerlink" title="3.配置picgo"></a>3.配置picgo</h2><ul>
+<li>打开安装好的picgo，选择图床设置/Github图床<ul>
+<li>设定仓库名：你的github用户名/仓库名</li>
+<li>设定分支名：<del>master</del> main （新版picgo的main就是master分支，如果main不行就使用master，下面自定义域名的main也要改成master）</li>
+<li>设定Token：就是上面创建的token</li>
+<li>指定存储路径：可自己设置，设置一个存储路径后，上传时，github会生成相应目录</li>
+<li>自定义域名：为<a href="https://cdn.jsdelivr.net/gh/%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BB%93%E5%BA%93%E5%90%8D@main">https://cdn.jsdelivr.net/gh/用户名/仓库名@main</a></li>
+</ul>
+</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518141807.png" alt="image-20210518125447189"></p>
+<h2 id="4-picgo的使用"><a href="#4-picgo的使用" class="headerlink" title="4.picgo的使用"></a>4.picgo的使用</h2><ul>
+<li>方法一：直接拖拽上传</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/202109272203143.png" alt="image-20210927220339051"></p>
+<ul>
+<li>方法二：快捷键上传CTRL+SHIFT+P<ul>
+<li>先随便复制一张图片</li>
+<li>使用快捷键CTRL+SHIFT+P</li>
+<li>粘贴到要使用的地方，发现默认就是以图床的地址粘贴的了</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143256.png" alt="image-20210518140105418"></p>
+<ul>
+<li><p>方法三：Typora软件自动上传（使用Typora编写Markdown的可以使用此方法）</p>
+<ul>
+<li><p>选择Typora左上角的文件/偏好设置</p>
+</li>
+<li><p>选择图像，上面两条选上</p>
+</li>
+<li><p>上传服务选PicGo(app)</p>
+</li>
+<li><p>PicGo路径选你安装的exe文件路径</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518145455.png" alt="image-20210518145455915"></p>
+</li>
+<li><p>选好之后，随便粘贴一张图片，就自动上传了</p>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>cdn</category>
+      </categories>
+      <tags>
+        <tag>cdn</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>github+jsdelivr搭建免费cdn</title>
     <url>/2021/05/18/jsdelivrcdn/</url>
     <content><![CDATA[<h1 id="github-jsdelivr搭建免费cdn"><a href="#github-jsdelivr搭建免费cdn" class="headerlink" title="github+jsdelivr搭建免费cdn"></a>github+jsdelivr搭建免费cdn</h1><h2 id="1-打开github，新建项目"><a href="#1-打开github，新建项目" class="headerlink" title="1.打开github，新建项目"></a>1.打开github，新建项目</h2><p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518142342.png" alt="image-20210518082342699"></p>
@@ -302,97 +393,6 @@
 <li>效果</li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518142607.png" alt="image-20210518100547147"></p>
-]]></content>
-      <categories>
-        <category>cdn</category>
-      </categories>
-      <tags>
-        <tag>cdn</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图床工具PicGo的使用</title>
-    <url>/2021/05/18/picgo/</url>
-    <content><![CDATA[<h1 id="图床工具PicGo的使用"><a href="#图床工具PicGo的使用" class="headerlink" title="图床工具PicGo的使用"></a>图床工具PicGo的使用</h1><h2 id="1-picgo安装"><a href="#1-picgo安装" class="headerlink" title="1.picgo安装"></a>1.picgo安装</h2><ul>
-<li><p><a href="https://github.com/Molunerfinn/PicGo/releases">picgo官网下载</a></p>
-<p>dmg是Mac版本，exe是windows版本</p>
-</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143147.png" alt="image-20210518120525361"></p>
-<p>安装直接傻瓜式一键安装就行了</p>
-<h2 id="2-打开github创建token"><a href="#2-打开github创建token" class="headerlink" title="2.打开github创建token"></a>2.打开github创建token</h2><ul>
-<li>打开github找到之前创建的cdn</li>
-</ul>
-<p>没创建过的可以看我之前发的博客github+jsdelivr搭建免费cdn</p>
-<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143156.png" alt="image-20210518121246319"></p>
-<ul>
-<li>点击右上角头像，点击Settings（设置）</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143206.png" alt="image-20210518122606592"></p>
-<ul>
-<li>选择左边的Developer settings（开发人员设定）</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143215.png" alt="image-20210518122758063"></p>
-<ul>
-<li>点击左边第三个Personal access tokens（个人访问令牌）</li>
-<li>点击中间右上角的Generate now token（生成新令牌）</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143221.png" alt="image-20210518122956574"></p>
-<ul>
-<li>Note填token名称</li>
-<li>repo全选</li>
-<li>其他的不用管</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143227.png" alt="image-20210518123511452"></p>
-<ul>
-<li>选完之后点击下面的绿色按钮</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143234.png" alt="image-20210518123846731"></p>
-<ul>
-<li>然后会生成一个token（token只显示一次，注意保存）</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143240.png" alt="image-20210518124109481"></p>
-<h2 id="3-配置picgo"><a href="#3-配置picgo" class="headerlink" title="3.配置picgo"></a>3.配置picgo</h2><ul>
-<li>打开安装好的picgo，选择图床设置/Github图床<ul>
-<li>设定仓库名：你的github用户名/仓库名</li>
-<li>设定分支名：<del>master</del> main （新版picgo的main就是master分支，如果main不行就使用master，下面自定义域名的main也要改成master）</li>
-<li>设定Token：就是上面创建的token</li>
-<li>指定存储路径：可自己设置，设置一个存储路径后，上传时，github会生成相应目录</li>
-<li>自定义域名：为<a href="https://cdn.jsdelivr.net/gh/%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BB%93%E5%BA%93%E5%90%8D@main">https://cdn.jsdelivr.net/gh/用户名/仓库名@main</a></li>
-</ul>
-</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518141807.png" alt="image-20210518125447189"></p>
-<h2 id="4-picgo的使用"><a href="#4-picgo的使用" class="headerlink" title="4.picgo的使用"></a>4.picgo的使用</h2><ul>
-<li>方法一：直接拖拽上传</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/202109272203143.png" alt="image-20210927220339051"></p>
-<ul>
-<li>方法二：快捷键上传CTRL+SHIFT+P<ul>
-<li>先随便复制一张图片</li>
-<li>使用快捷键CTRL+SHIFT+P</li>
-<li>粘贴到要使用的地方，发现默认就是以图床的地址粘贴的了</li>
-</ul>
-</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518143256.png" alt="image-20210518140105418"></p>
-<ul>
-<li><p>方法三：Typora软件自动上传（使用Typora编写Markdown的可以使用此方法）</p>
-<ul>
-<li><p>选择Typora左上角的文件/偏好设置</p>
-</li>
-<li><p>选择图像，上面两条选上</p>
-</li>
-<li><p>上传服务选PicGo(app)</p>
-</li>
-<li><p>PicGo路径选你安装的exe文件路径</p>
-<p><img src="https://cdn.jsdelivr.net/gh/bzliwei/cdn@master//img/20210518145455.png" alt="image-20210518145455915"></p>
-</li>
-<li><p>选好之后，随便粘贴一张图片，就自动上传了</p>
-</li>
-</ul>
-</li>
-</ul>
 ]]></content>
       <categories>
         <category>cdn</category>
